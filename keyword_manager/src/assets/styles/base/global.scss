@@ -1,0 +1,28 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif !important;
+    user-select: text; 
+}
+
+html {
+    height: 100%;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        overflow: hidden;
+    }
+}
+ 
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+    background-color: $page-background;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        overflow-y: auto;
+        height: 100%;
+    }
+}

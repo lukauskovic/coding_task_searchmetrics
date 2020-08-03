@@ -1,0 +1,12 @@
+.AppFrame{
+    color: $white;
+    padding: 24px;
+
+    &--Title{
+        width: 100%;
+        display: block;
+        font-weight: bolder;
+        font-size: 32px;
+        text-align: center;
+    }
+}

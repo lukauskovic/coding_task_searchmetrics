@@ -1,0 +1,110 @@
+.CategoriesTable{
+    padding-top: 100px;
+    color: $white;
+
+    table{
+        margin: auto;
+        border-collapse: collapse;
+    }
+
+    thead{
+        td{
+            border-bottom: 2px solid $white;
+        }
+        p{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+    }
+    td{
+        @include fade-in;
+        position: relative;
+        width: 200px;
+        height: 60px;
+        padding: 12px;
+        vertical-align: middle;
+
+        p{
+            display: inline;
+        }
+    }
+
+    &--CategoryCells{
+        border-right: 1px solid $white;
+        font-weight: bold;
+    }
+
+    &--KeywordCells{
+        width: 500px !important;
+        font-size: 18px;
+        letter-spacing: .8px;
+
+        div{
+            position: relative;
+            display: inline;
+            white-space: nowrap ;
+
+            &:hover{
+                .DeleteIndicator{
+                    visibility: visible;
+                    display: initial !important;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .DeleteIndicator{
+            @include fade-in;
+            visibility: hidden;
+            display: none !important;
+            cursor: pointer;
+            color: $red;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    }
+
+    &--AddButton{
+        
+        display: block !important;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        width: 200px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    &--AddCategoryForm{
+        input{
+            @include fade-in;
+            background-color: $page-background;
+            height: 25px;
+            width: 150px;
+            padding: 3px;
+            color: $white;
+            outline: none;
+            appearance: none;
+            border: none;
+
+            &:focus{
+                border-bottom: 2px solid $blue;
+            }
+        }
+    }
+
+    &--RemoveCategory{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        transition: all .5s;
+        color: $red;
+        &:hover{
+            transform: scale(1.5    );
+        }
+    }
+}

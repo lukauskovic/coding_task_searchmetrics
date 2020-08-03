@@ -1,0 +1,59 @@
+{
+  "name": "keyword_manager",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.1.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.47",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-loader-spinner": "^3.1.0",
+    "@types/react-router-dom": "^5.1.5",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.3.0",
+    "lodash.clonedeep": "^4.5.0",
+    "mdn-polyfills": "^5.20.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-loader-spinner": "^3.1.14",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "sass-mq": "^5.0.1",
+    "tslint": "^6.1.2",
+    "tslint-config-standard": "^9.0.0",
+    "tslint-react": "^4.2.0",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "ie 11",
+      "last 1 ie version",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
